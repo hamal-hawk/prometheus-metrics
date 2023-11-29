@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s # Set the scrape interval
+
+scrape_configs:
+  - job_name: "my-go-application"
+    static_configs:
+      - targets: ["localhost:9091"] # Replace with your application's address
